@@ -95,6 +95,7 @@ a {
 }
 #fp-nav ul li.black .fp-tooltip {
   color: #000;
+  transition: opacity .3s;
 }
 #fp-nav ul li.black:has(a.active)::after {
   color: #000;
@@ -249,6 +250,20 @@ header .inner .btn:hover {
 header .btn:hover .circle {
   background-color: #b4ac97;
 }
+header .hamburger {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+header .hamburger > span {
+  width: 24px;
+  height: 2px;
+  border-radius: 50px;
+  background-color: #fff;
+  gap: 20px;
+}
 /* HOME 섹션 제외한 header */
 header.next {
   background-color: #f2f2ef;
@@ -265,6 +280,9 @@ header.next .menu .btn {
 }
 header.next .inner .white {
   filter: brightness(1) invert(1);
+}
+header.next .hamburger > span {
+  background-color: #2f2f2f;
 }
 /* header 끝 */
 /* HOME section 시작 */
@@ -350,7 +368,7 @@ header.next .inner .white {
   position: absolute;
   top: 0%;
   left: 60%;
-  background: url("../img/main-about-leap.png") no-repeat center / contain;
+  background: url("../img/main-about-leap.png") no-repeat top / contain;
   animation: move 6s ease-in-out infinite;
   z-index: 1;
 }

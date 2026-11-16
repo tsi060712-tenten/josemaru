@@ -3,6 +3,7 @@ $(function () {
   let sectionPlayed = {};
 
   $("#fullpage").fullpage({
+    responsiveWidth: 768.98,
     scrollingSpeed: 1200,
     navigation: true,
     navigationPosition: "right",
@@ -304,4 +305,22 @@ $(function () {
     $.fn.fullpage.moveTo(1);
   });
 
+
+});
+
+// 이미지 반응형 변경
+function imgChange() {
+    if ($(window).width() <= 768) {
+        $('.about .img-wrap > img').attr('src', 'img/text-m.svg');
+    } else {
+        $('.about .img-wrap > img').attr('src', 'img/text.svg');
+    }
+}
+
+// 처음 로딩할 때 실행
+imgChange();
+
+// 화면 크기 변경할 때 실행
+$(window).resize(function () {
+    imgChange();
 });

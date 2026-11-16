@@ -32,6 +32,7 @@
     <link rel="shortcut icon" sizes="any" href="favicon.ico">
     <link rel="stylesheet" href="css/fullpage.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- 제이쿼리 js -->
     <script
@@ -74,6 +75,11 @@
                 <span>문의하기</span>
                 <div class="circle"></div>
               </a>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
         </div>
@@ -235,8 +241,10 @@
           <div class="inner">
             <div class="content">
               <div class="case-left">
-                <h2>CASE</h2>
-                <h3>조세마루 성공사례</h3>
+                <div class="left-top">
+                  <h2>CASE</h2>
+                  <h3>조세마루 성공사례</h3>
+                </div>
                 <a href="#">
                   <p>자세히 보기</p>
                   <div class="arrow"></div>
@@ -316,7 +324,7 @@
             <script>
               var swiper = new Swiper(".news", {
                 slidesPerView: "auto",
-                loop: true,
+                autoPlay: true,
                 navigation: {
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",

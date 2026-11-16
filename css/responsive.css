@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768.98px) {
+    .menu .gnb {
+        display: none;
+    }
+    #fp-nav.right {
+        display: none;
+    }
+    header .hamburger {
+        display: flex;
+    }
+    header .inner .menu {
+        gap: 28px;
+    }
+    header {
+        height: 62px;
+    }
+    .logo-svg {
+        width: 90%;
+    }
+    .home .content {
+        padding-bottom: 45px;
+    }
+}
+@media screen and (max-width: 424.98px) {
+    header {
+        height: 66px;
+    }
+    header .inner .logo {
+        width: 90px;
+    }
+    header .inner .logo .white {
+        width: 90px;
+    }
+    header .inner .menu {
+        gap: 24px
+    }
+    .menu .btn span {
+        font-size: 14px;
+    }
+    .btn .circle {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .logo-svg {
+        width: 95%;
+    }
+    .home::before {
+        background: url(../img/main-house.png) no-repeat 50% center / cover;
+        opacity: .7;
+    }
+    .main-detail {
+        font-size: 22px;
+        margin-top: 12px;
+        word-break: keep-all;
+        font-weight: 500;
+    }
+    .about {
+        background: url(../img/main-about-bg.jpg) no-repeat 54% center / cover;
+    }
+    .about .content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+    }
+    .about .txt-box h3 > span {
+        font-size: 20px;
+    }
+    .about .txt-box b span {
+        font-size: 20px;
+    }
+    .about::before {
+        width: 90%;
+        height: 10%;
+        left: 50%;
+    }
+    .about::after {
+        width: 70%;
+        height: 35%;
+        opacity: 0.4;
+    }
+    .about .txt-box {
+        width: auto;
+        gap: 20px;
+    }
+    .members {
+        background: url(../img/main-member-bg.jpg) no-repeat 51% center / cover;
+    }
+    .members .content {
+        padding-top: 80px ;
+        padding-bottom: 80px ;
+    }
+    .members .content .m-title h2 {
+        font-size: 40px;
+    }
+    .members .content .m-title a span {
+        font-size: 14px;
+    }
+    .members .m-middle .num {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .members .m-middle .num li h3 {
+        font-size: 16px;
+    }
+    .m-middle .num .men b {
+        font-size: 48px;
+    }
+    .m-middle .num .men p {
+        font-size: 22px;
+    }
+    .m-middle .num .men {
+        margin-top: 16px;
+        justify-content: flex-end;
+    }
+    
+    .members .m-middle .num {
+        gap: 24px;
+    }
+    .members .m-bottom {
+        margin-top: 24px;
+    }
+    .m-bottom .name-box {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .m-bottom .name-box li {
+        padding: 24px;
+    }
+    .m-bottom .name-box li .name {
+        padding-bottom: 16px;
+    }
+    .m-bottom .name-box li .name b {
+        font-size: 22px;
+    }
+    .m-bottom .name-box li .name span {
+        font-size: 16px;
+    }
+    .m-bottom .name-box li p {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    .case .content {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .case .inner {
+        padding-top: 70px;
+    }
+    .case .content .case-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .case .content .case-left h2 {
+        font-size: 40px;
+    }
+    
+    .case .content .case-left h3 {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    .case .content .case-left a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .jose li {
+        padding: 24px 0;
+    }
+    .jose li a {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .jose li a h3 {
+        font-size: 18px;
+    }
+    .jose li a p {
+        font-size: 14px;
+    }
+    .columns .content .c-title h2 {
+        font-size: 40px;
+    }
+    .columns .content .c-title span {
+        font-size: 14px;
+    }
+    .contact-us .inner .logotitle {
+        font-size: 20px;
+    }
+    .logotitle .line {
+        width: 1px;
+        height: 24px;
+    }
+    .contact-us .inner h2 {
+        font-size: 42px;
+    }
+    .contact-us .inner > span {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .c-slide .news {
+        margin-top: 40px;
+    }
+    .c-slide .news .swiper-slide {
+        width: 292px;
+        margin-right: 16px;
+        word-break: keep-all;
+    }
+    .c-slide .news .swiper-slide br {
+        display: none;
+    }
+    .c-slide .news .swiper-slide h3 {
+        font-size: 18px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .c-slide .news .swiper-slide span {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    .c-slide .news .swiper-slide {
+        padding: 24px;
+    }
+
+
+
+    /* footer 시작 */
+    .call {
+        padding: 0 20px;
+    }
+    .footer-top .left-side .privacy p {
+        font-size: 12px;
+        margin-top: 22px;
+    }
+    .footer-top .right-side ul li a p {
+        font-size: 16px;
+    }
+    .footer-top {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer-top .right-side ul {
+        gap: 10px;
+    }
+    .footer-top .left-side img {
+        width: 90px;
+    }
+    .footer-bottom .fb-left {
+        font-size: 12px;
+    }
+    .footer-bottom .fb-left .info {
+        flex-direction: column;
+        font-size: 12px;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    .footer-bottom {
+        padding: 40px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .footer-bottom .gotop {
+        display: block;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+}
