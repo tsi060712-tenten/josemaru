@@ -22,6 +22,47 @@
     .home .content {
         padding-bottom: 45px;
     }
+    .menu:has(.hamburger.open) header:hover {
+        background-color: #fff;
+    }
+    .menu:has(.hamburger.open) .gnb {
+        display: block;
+        position: fixed;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        opacity: 1;
+        transition: opacity .3s;
+    }
+     .menu:has(.hamburger.open) .gnb nav ul li:nth-child(1) {
+        display: block;
+        font-size: 30px;
+        line-height: 5;
+    }
+    .menu:has(.hamburger.open) .gnb nav {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu:has(.hamburger.open) .gnb nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        width: 100%;
+    }
+    .menu:has(.hamburger.open) .gnb nav ul li {
+        border: solid #d9d9d9;
+        width: 100%;
+        border-width: 0 0 1px 0;
+        line-height: 4;
+    }
+    .menu:has(.hamburger.open) header .gnb nav ul li + li::after {
+        display: none;
+    }
 }
 @media screen and (max-width: 424.98px) {
     header {
@@ -244,9 +285,6 @@
     .footer-top {
         padding-top: 60px;
         padding-bottom: 60px;
-    }
-    .footer-top .right-side ul {
-        gap: 10px;
     }
     .footer-top .left-side img {
         width: 90px;

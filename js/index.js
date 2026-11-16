@@ -305,6 +305,10 @@ $(function () {
     $.fn.fullpage.moveTo(1);
   });
 
+  // 햄버거 메뉴
+  $('.hamburger').click(function(){
+    $('.hamburger').toggleClass('open')
+  })
 
 });
 
